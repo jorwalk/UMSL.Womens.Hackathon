@@ -2,9 +2,27 @@
 {{! The tag above means - insert everything in this file into the {content} of the layout.html template }}
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <h1 class="display-3 text-center">City Watch</h1>
+    <p class="lead text-center">Your resource for immediate local information</p>
+    <div class="col-xs-12 text-center mt-5 mb-5"> 
+	    <div class="btn-group">
+	    	<a href="/feedback" class="btn btn-primary">Feedback</a>
+	    	<a href="/feedback" class="btn btn-primary">Alerts</a>
+	    	<a href="/feedback" class="btn btn-primary">Awareness</a>
+	    </div>
+    </div>
+	
+    <p>City Watch is an app for all communities to access information specific to your area.</p>
+    <p>The purpose of City Watch is to:</p>
+    <ul>
+    	<li>provide local community information</li>
+    	<li>a forum to provide feedback on issues specific to your community</li>
+    	<li>alerts relevant to your local community interests.</li>
+    </ul>
   </div>
 </div>
-<h1>{{title}}</h1>
-<p>{{message}}</p>
+<section class="container">
+	<div class="row">
+	  <div id="map" class="map"></div>
+	</div>
+</section>
