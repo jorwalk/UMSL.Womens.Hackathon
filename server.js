@@ -7,14 +7,26 @@ server.connection({
   host: '0.0.0.0',
   port: process.env.PORT || 5000
 })
-server.route({
+/* ROUTES */
+server.route([{
   method: 'GET',
   path: '/',
   handler: function (request, reply) {
     var data = { message: 'Hello from Future Studio' }
     reply.view('index', data)
   }
-})
+},{
+  method: 'GET',
+  path: '/feedback',
+  handler: function (request, reply) {
+    var data = { message: 'Provides feedback to community', title: 'Feedback' }
+    reply.view('feedback', data)
+  }
+}])
+
+
+
+/* REGISTER */
 server.register(Vision, function(err) {
   if (err) {
     console.log('Cannot register vision')
