@@ -1,10 +1,10 @@
 "# UMSL.Womens.Hackathon" 
-echo "# UMSL.Womens.Hackathon" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/jorwalk/UMSL.Womens.Hackathon.git
-git push -u origin master
+* echo "# UMSL.Womens.Hackathon" >> README.md
+* git init
+* git add README.md
+* git commit -m "first commit"
+* git remote add origin https://github.com/jorwalk/UMSL.Womens.Hackathon.git
+* git push -u origin master
 
 
 # Getting Started
@@ -181,3 +181,20 @@ Download the `.css.min` to the css folder, and add stylesheet rel to html head
 ```
 <link rel="stylesheet" href="">
 ```
+
+
+# Heroku
+* https://infinite-shelf-87848.herokuapp.com/ | https://git.heroku.com/infinite-shelf-87848.git
+
+```
+git remote add heroku https://git.heroku.com/infinite-shelf-87848.git
+```
+
+```
+git remote set-url heroku https://git.heroku.com/infinite-shelf-87848.git
+```
+
+```
+git push heroku master
+```
+
