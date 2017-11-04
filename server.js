@@ -22,6 +22,13 @@ server.route([{
     var data = { message: 'Provides feedback to community', title: 'Feedback' }
     reply.view('feedback', data)
   }
+},{
+  method: 'GET',
+  path: '/alert',
+  handler: function (request, reply) {
+    var data = { message: 'Put alert here', title: 'Alert' }
+    reply.view('alert', data)
+  }
 }])
 
 
