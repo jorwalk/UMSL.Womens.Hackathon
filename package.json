@@ -1,0 +1,26 @@
+{
+  "name": "umsl",
+  "version": "1.0.0",
+  "description": "umsl women hackathon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorwalk/UMSL.Womens.Hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorwalk/UMSL.Womens.Hackathon/issues"
+  },
+  "homepage": "https://github.com/jorwalk/UMSL.Womens.Hackathon#readme",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "hapi": "^16.6.2",
+    "inert": "^5.0.1",
+    "vision": "^5.0.0"
+  }
+}
