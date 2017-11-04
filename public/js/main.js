@@ -15,21 +15,6 @@ $(document).ready(function() {
         })
     });
 
-    // var proj1 = ol.proj.get(myProjectionName);
-	// var geolocation = new ol.Geolocation({
-	//     projection:"EPSG:3857",
-	//     tracking: true
-	// });
-
-	// geolocation.on('change', function(evt) {
-	// 	console.log(evt)
-	//   console.log(geolocation.getPosition());
-	//   map.getView().setCenter(geolocation.getPosition());
-	// });
-
-    // console.log(map.getView().getProjection())
-    // map.getView().setCenter(ol.proj.transform(['894672.5', '995003.7'], , ))
-
     $('#awarenessZipcode').keyup(function() {
         if ($(this).val() == '63119') {
             $('#awarenessContainer').show();
